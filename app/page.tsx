@@ -141,14 +141,14 @@ export default function Home() {
 
           <div className="mt-6 flex flex-wrap gap-4 font-mono text-xs">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:leiziane.trevisan@gmail.com"
               className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
             >
               EMAIL
             </a>
 
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/LeizianeTrevisanDardin"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
@@ -157,7 +157,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/leiziane-trevisan-dardin/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
