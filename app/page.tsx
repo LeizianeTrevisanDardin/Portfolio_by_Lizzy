@@ -24,16 +24,16 @@ const PROJECTS = [
     stack: ["Next.js", "TypeScript", "Supabase"],
      href:"https://co-working-next-js.vercel.app/"
   },
-  {
-    symbol: "$JULINA",
-    name: "Festa Julina Invitation",
-    icon: PartyPopper,
-    status: "SHIPPED" as const,
-    description:
-      "An interactive event website featuring a countdown, RSVP, shared food lists, photo gallery, anonymous authentication, and secure row-level security policies.",
-    stack: ["Next.js", "Supabase", "RLS"],
+  // {
+  //   symbol: "$JULINA",
+  //   name: "Festa Julina Invitation",
+  //   icon: PartyPopper,
+  //   status: "SHIPPED" as const,
+  //   description:
+  //     "An interactive event website featuring a countdown, RSVP, shared food lists, photo gallery, anonymous authentication, and secure row-level security policies.",
+  //   stack: ["Next.js", "Supabase", "RLS"],
    
-  },
+  // },
 ];
 
 export default function Home() {
