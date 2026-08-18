@@ -24,16 +24,23 @@ const PROJECTS = [
     stack: ["Next.js", "TypeScript", "Supabase"],
      href:"https://co-working-next-js.vercel.app/"
   },
-  // {
-  //   symbol: "$JULINA",
-  //   name: "Festa Julina Invitation",
-  //   icon: PartyPopper,
-  //   status: "SHIPPED" as const,
-  //   description:
-  //     "An interactive event website featuring a countdown, RSVP, shared food lists, photo gallery, anonymous authentication, and secure row-level security policies.",
-  //   stack: ["Next.js", "Supabase", "RLS"],
-   
-  // },
+  {
+     symbol: "$CUP",
+    name: "CupTogether",
+    image: "/images/app-logo.jpeg",
+    status: "LIVE" as const,
+    description:
+      "A cross-platform social coffee discovery app for sharing coffee finds, connecting with other users, and creating private groups, featuring authentication, social interactions, responsive design, and backend-enforced privacy.",
+    stack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "RLS",
+    ],
+    href: "https://cuptogether.expo.app",
+  },
 ];
 
 export default function Home() {
