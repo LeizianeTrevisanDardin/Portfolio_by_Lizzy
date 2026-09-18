@@ -71,7 +71,7 @@ const PROJECTS = [
   {
      symbol: "$CUP",
     name: "CupTogether",
-    image: "/images/app-logo.jpeg",
+    image: "/images/app-logo.png",
     status: "LIVE" as const,
     description:
       "A cross-platform social coffee discovery app for sharing coffee finds, connecting with other users, and creating private groups, featuring authentication, social interactions, responsive design, and backend-enforced privacy.",
