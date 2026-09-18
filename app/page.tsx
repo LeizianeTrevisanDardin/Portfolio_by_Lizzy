@@ -69,6 +69,25 @@ const PROJECTS = [
      href:"https://co-working-next-js.vercel.app/"
   },
   {
+     symbol: "$BLOOMY",
+    name: "Bloomy",
+    image: "/images/bloomy.png",
+    status: "LIVE" as const,
+    description:
+      "Bloomy is a gamified productivity application that combines planning tools with an interactive pixel-art world. Users can organize habits, tasks, and long-term goals while earning XP and coins for completed activities. The dashboard changes its scenery according to the local weather and time of day, creating a more personal and engaging planning experience.",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Supabase",
+      "Open-Meteo",
+      "NOAA Space Weather Prediction Center",
+      "Sharp",
+    ],
+    href: "https://bloomy-inky.vercel.app/",
+  },
+  {
      symbol: "$CUP",
     name: "CupTogether",
     image: "/images/app-logo.png",
