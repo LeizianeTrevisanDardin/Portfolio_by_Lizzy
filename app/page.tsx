@@ -4,6 +4,28 @@ import { Building2, PartyPopper } from "lucide-react";
 import Image from "next/image";
 
 const PROJECTS = [
+   {
+     symbol: "$CAREERFLOW",
+    name: "CareerFlow",
+    image:  "/images/careerflow-logo.png",
+    status: "LIVE" as const,
+   description:
+      "CareerFlow is a full-stack career management platform designed to help job seekers organize their job search, improve their professional profile, and prepare stronger job applications from one place. The project combines application tracking, resume management, AI-assisted analysis, job matching, cover letter generation, LinkedIn and portfolio analysis, and practical career tools in a single dashboard.",
+
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase (PostgreSQL)",
+      "Supabase Authentication",
+      "Google Gemini API",
+      "Stripe",
+      "Vercel",
+      "Lucide React",
+    ],
+    href: "https://career-flow-bay.vercel.app/login",
+  },
   {
     symbol: "$PLANR",
     name: "Day Trading Planner",
@@ -41,6 +63,7 @@ const PROJECTS = [
     ],
     href: "https://cuptogether.expo.app",
   },
+  
 ];
 
 export default function Home() {

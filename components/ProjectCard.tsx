@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 type ProjectCardProps = {
   symbol: string;
@@ -42,6 +43,7 @@ const statusStyles: Record<ProjectCardProps["status"], string> = {
 export default function ProjectCard({
   symbol,
   name,
+  image,
   icon: Icon,
   useCandleIcon = false,
   status,
@@ -61,7 +63,19 @@ export default function ProjectCard({
             </h3>
           </div>
 
-          {useCandleIcon ? (
+          {image? (
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-panel2 bg-panel2 text-lime transition-colors group-hover:border-lime/40">
+              <Image
+                src={image}
+                alt={`${name} logo`}
+                width={44}
+                height={44}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ) : 
+          
+          useCandleIcon ? (
             <CandleGlyph />
           ) : Icon ? (
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-panel2 bg-panel2 text-lime transition-colors group-hover:border-lime/40">
