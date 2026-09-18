@@ -4,6 +4,7 @@ import Image from "next/image";
 type ProjectCardProps = {
   symbol: string;
   name: string;
+  image?: string;
   icon?: LucideIcon;
   useCandleIcon?: boolean;
   status: "LIVE" | "SHIPPED" | "IN BUILD";
