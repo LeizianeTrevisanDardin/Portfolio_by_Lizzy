@@ -51,7 +51,7 @@ const PROJECTS = [
   {
     symbol: "$PLANR",
     name: "Day Trading Planner",
-    useCandleIcon: true,
+    image: "/images/trading-logo.png",
     status: "LIVE" as const,
     description:
       "A professional trading planning and coaching platform for MES, ES, MNQ, and NQ, featuring risk calculation, automated guardrails, trade journaling, and AI-assisted analysis.",
@@ -61,7 +61,7 @@ const PROJECTS = [
   {
     symbol: "$COWORK",
     name: "Coworking Space App",
-    icon: Building2,
+    image: "/images/coworking-logo.png",
     status: "LIVE" as const,
     description:
       "A full-stack coworking management platform with owner and coworker dashboards, property management, workspace booking, authentication, and role-based access control.",
