@@ -27,6 +27,28 @@ const PROJECTS = [
     href: "https://career-flow-bay.vercel.app/login",
   },
   {
+  symbol: "$LIZZYEDIT",
+  name: "The Lizzy Edit Admin CMS",
+  image: "/images/lizzy-edit-logo.png",
+  status: "LIVE" as const,
+  description:
+    "A full-stack beauty affiliate platform built with Next.js and Supabase, featuring a custom CMS, protected admin dashboard, product management, journal publishing, affiliate click tracking, dynamic SEO, and responsive content-driven pages.",
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Tailwind CSS",
+    "Supabase",
+    "PostgreSQL",
+    "Supabase Auth",
+    "Supabase Storage",
+    "Server Actions",
+    "Vercel",
+    "SEO",
+  ],
+  href: "https://the-lizzy-edit.vercel.app/",
+},
+  {
     symbol: "$PLANR",
     name: "Day Trading Planner",
     useCandleIcon: true,
