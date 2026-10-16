@@ -10,7 +10,6 @@ const ITEMS: TickerItem[] = [
   { label: "SUPABASE", value: "100%", up: true },
   { label: "TAILWIND", value: "100%", up: true },
   { label: "REACT", value: "100%", up: true },
-  { label: "MES/ES/MNQ/NQ", value: "LIVE", up: true },
   { label: "DEBUG STREAK", value: "∞", up: true },
 ];
 

@@ -26,6 +26,64 @@ const PROJECTS = [
     ],
     href: "https://career-flow-bay.vercel.app/login",
   },
+
+
+  {
+    symbol: "$COWORK",
+    name: "Coworking Space App",
+    image: "/images/coworking-logo.png",
+    status: "LIVE" as const,
+    description:
+      "A full-stack coworking management platform with owner and coworker dashboards, property management, workspace booking, authentication, and role-based access control.",
+    stack: ["Next.js", "TypeScript", "Supabase"],
+     href:"https://co-working-next-js.vercel.app/"
+  },
+  {
+     symbol: "$CUP",
+    name: "CupTogether",
+    image: "/images/app-logo.png",
+    status: "LIVE" as const,
+    description:
+      "A cross-platform social coffee discovery app for sharing coffee finds, connecting with other users, and creating private groups, featuring authentication, social interactions, responsive design, and backend-enforced privacy.",
+    stack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "RLS",
+    ],
+    href: "https://cuptogether.expo.app",
+  },
+  {
+     symbol: "$BLOOMY",
+    name: "Bloomy",
+    image: "/images/bloomy.png",
+    status: "LIVE" as const,
+    description:
+      "Bloomy is a gamified productivity application that combines planning tools with an interactive pixel-art world. Users can organize habits, tasks, and long-term goals while earning XP and coins for completed activities. The dashboard changes its scenery according to the local weather and time of day, creating a more personal and engaging planning experience.",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Supabase",
+      "Open-Meteo",
+      "NOAA Space Weather Prediction Center",
+      "Sharp",
+    ],
+    href: "https://bloomy-inky.vercel.app/",
+  },
+  {
+    symbol: "$PLANR",
+    name: "Day Trading Planner",
+    image: "/images/trading-logo.png",
+    status: "LIVE" as const,
+    description:
+      "A professional trading planning and coaching platform for MES, ES, MNQ, and NQ, featuring risk calculation, automated guardrails, trade journaling, and AI-assisted analysis.",
+    stack: ["Next.js", "TypeScript", "Supabase"],
+    href:"https://trading-coaching-app-gg2u.vercel.app/"
+  },
   {
   symbol: "$LIZZYEDIT",
   name: "The Lizzy Edit Admin CMS",
@@ -48,62 +106,6 @@ const PROJECTS = [
   ],
   href: "https://the-lizzy-edit.vercel.app/",
 },
-  {
-    symbol: "$PLANR",
-    name: "Day Trading Planner",
-    image: "/images/trading-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A professional trading planning and coaching platform for MES, ES, MNQ, and NQ, featuring risk calculation, automated guardrails, trade journaling, and AI-assisted analysis.",
-    stack: ["Next.js", "TypeScript", "Supabase"],
-    href:"https://trading-coaching-app-gg2u.vercel.app/"
-  },
-  {
-    symbol: "$COWORK",
-    name: "Coworking Space App",
-    image: "/images/coworking-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A full-stack coworking management platform with owner and coworker dashboards, property management, workspace booking, authentication, and role-based access control.",
-    stack: ["Next.js", "TypeScript", "Supabase"],
-     href:"https://co-working-next-js.vercel.app/"
-  },
-  {
-     symbol: "$BLOOMY",
-    name: "Bloomy",
-    image: "/images/bloomy.png",
-    status: "LIVE" as const,
-    description:
-      "Bloomy is a gamified productivity application that combines planning tools with an interactive pixel-art world. Users can organize habits, tasks, and long-term goals while earning XP and coins for completed activities. The dashboard changes its scenery according to the local weather and time of day, creating a more personal and engaging planning experience.",
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS 4",
-      "Supabase",
-      "Open-Meteo",
-      "NOAA Space Weather Prediction Center",
-      "Sharp",
-    ],
-    href: "https://bloomy-inky.vercel.app/",
-  },
-  {
-     symbol: "$CUP",
-    name: "CupTogether",
-    image: "/images/app-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A cross-platform social coffee discovery app for sharing coffee finds, connecting with other users, and creating private groups, featuring authentication, social interactions, responsive design, and backend-enforced privacy.",
-    stack: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Supabase",
-      "PostgreSQL",
-      "RLS",
-    ],
-    href: "https://cuptogether.expo.app",
-  },
   
 ];
 
@@ -154,7 +156,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
-          Full-stack developer focused on Next.js, TypeScript, and Supabase.
+          Junior Software Developer focused on React.js, Next.js, TypeScript, and Supabase.
           From idea to deployment and building dashboards, authentication,
           access-control systems, and real-world products. I love exploring new challenges, please contact me if you have one.
         </p>
