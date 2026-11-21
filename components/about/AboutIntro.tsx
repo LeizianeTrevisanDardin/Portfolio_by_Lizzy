@@ -21,7 +21,7 @@ export default function AboutIntro () {
             {/* ACTION */}
              <div className="mt-5">
                 <Button
-                    href="/about"
+                    href="https://www.linkedin.com/in/leiziane-trevisan-dardin/"
                     variant="primary"
                 >
                     MORE ABOUT ME
