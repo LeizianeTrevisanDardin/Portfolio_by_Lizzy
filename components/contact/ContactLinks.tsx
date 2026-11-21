@@ -1,9 +1,3 @@
-import { Mail } from "lucide-react";
-import { CONTACT_EMAIL } from "@/lib/constants";
-import {
-  GithubIcon,
-  LinkedinIcon,
-} from "@/components/ui/BrandIcons";
 
 import ContactSocials from "@/components/contact/ContactSocials";
 
