@@ -1,245 +1,28 @@
-import Ticker from "@/components/Ticker";
-import ProjectCard from "@/components/ProjectCard";
-import { Building2, PartyPopper } from "lucide-react";
-import Image from "next/image";
 
-const PROJECTS = [
-   {
-     symbol: "$CAREERFLOW",
-    name: "CareerFlow",
-    image:  "/images/careerflow-logo.png",
-    status: "LIVE" as const,
-   description:
-      "CareerFlow is a full-stack career management platform designed to help job seekers organize their job search, improve their professional profile, and prepare stronger job applications from one place. The project combines application tracking, resume management, AI-assisted analysis, job matching, cover letter generation, LinkedIn and portfolio analysis, and practical career tools in a single dashboard.",
+import Header from "@/components/layout/Header";
+import Hero from "@/components/hero/Hero";
+import FeaturedProject from "@/components/projects/FeaturedProject";
+import ProjectSection from "@/components/projects/ProjectSection"
+import TestimonialSection from "@/components/testimonials/TestimonialSection";
+import AchievementsSection from "@/components/achievements/AchievementsSection";
+import AboutSection from "@/components/about/AboutSection";
+import ContactSection from "@/components/contact/ContactSection";
 
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Supabase (PostgreSQL)",
-      "Supabase Authentication",
-      "Google Gemini API",
-      "Stripe",
-      "Vercel",
-      "Lucide React",
-    ],
-    href: "https://career-flow-bay.vercel.app/login",
-  },
-
-
-  {
-    symbol: "$COWORK",
-    name: "Coworking Space App",
-    image: "/images/coworking-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A full-stack coworking management platform with owner and coworker dashboards, property management, workspace booking, authentication, and role-based access control.",
-    stack: ["Next.js", "TypeScript", "Supabase"],
-     href:"https://co-working-next-js.vercel.app/"
-  },
-  {
-     symbol: "$CUP",
-    name: "CupTogether",
-    image: "/images/app-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A cross-platform social coffee discovery app for sharing coffee finds, connecting with other users, and creating private groups, featuring authentication, social interactions, responsive design, and backend-enforced privacy.",
-    stack: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Supabase",
-      "PostgreSQL",
-      "RLS",
-    ],
-    href: "https://cuptogether.expo.app",
-  },
-  {
-     symbol: "$BLOOMY",
-    name: "Bloomy",
-    image: "/images/bloomy.png",
-    status: "LIVE" as const,
-    description:
-      "Bloomy is a gamified productivity application that combines planning tools with an interactive pixel-art world. Users can organize habits, tasks, and long-term goals while earning XP and coins for completed activities. The dashboard changes its scenery according to the local weather and time of day, creating a more personal and engaging planning experience.",
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS 4",
-      "Supabase",
-      "Open-Meteo",
-      "NOAA Space Weather Prediction Center",
-      "Sharp",
-    ],
-    href: "https://bloomy-inky.vercel.app/",
-  },
-  {
-    symbol: "$PLANR",
-    name: "Day Trading Planner",
-    image: "/images/trading-logo.png",
-    status: "LIVE" as const,
-    description:
-      "A professional trading planning and coaching platform for MES, ES, MNQ, and NQ, featuring risk calculation, automated guardrails, trade journaling, and AI-assisted analysis.",
-    stack: ["Next.js", "TypeScript", "Supabase"],
-    href:"https://trading-coaching-app-gg2u.vercel.app/"
-  },
-  {
-  symbol: "$LIZZYEDIT",
-  name: "The Lizzy Edit Admin CMS",
-  image: "/images/lizzy-edit-logo.png",
-  status: "LIVE" as const,
-  description:
-    "A full-stack beauty affiliate platform built with Next.js and Supabase, featuring a custom CMS, protected admin dashboard, product management, journal publishing, affiliate click tracking, dynamic SEO, and responsive content-driven pages.",
-  stack: [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "Tailwind CSS",
-    "Supabase",
-    "PostgreSQL",
-    "Supabase Auth",
-    "Supabase Storage",
-    "Server Actions",
-    "Vercel",
-    "SEO",
-  ],
-  href: "https://the-lizzy-edit.vercel.app/",
-},
-  
-];
 
 export default function Home() {
   return (
+    <>
+    <Header />
+    
     <main>
-      {/* Navigation */}
-      <header className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
-        <span className="font-mono text-sm text-lavender">LZ//DEV</span>
-
-        <nav className="flex gap-6 font-mono text-xs text-muted">
-          <a href="#projects" className="hover:text-paper">
-            projects
-          </a>
-
-          <a href="#contact" className="hover:text-paper">
-            contact
-          </a>
-        </nav>
-      </header>
-
-      {/* Ticker */}
-      <Ticker />
-
-      {/* Hero */}
-      <section className="mx-auto max-w-5xl px-6 pb-20 pt-20">
-        <div className="mb-6 flex items-center gap-2 font-mono text-xs text-lime">
-          <span className="h-2 w-2 animate-blink rounded-full bg-lime" />
-          STATUS: BUILDING
-        </div>
-
-        <div className="relative h-56 w-56 overflow-hidden rounded-3xl border border-lime/40">
-         <Image
-          src="/images/leizi-profissional.png"
-          alt="Leiziane, Full-Stack Developer"
-          fill
-          className="object-cover"
-          priority
-          />
-        </div>
-
-        <h1 className="font-display text-5xl font-bold leading-[1.05] text-paper sm:text-7xl">
-          Leiziane
-          <br />
-          <span className="text-lavender">builds products,</span>
-          <br />
-          not just code.
-        </h1>
-
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
-          Junior Software Developer focused on React.js, Next.js, TypeScript, and Supabase.
-          From idea to deployment and building dashboards, authentication,
-          access-control systems, and real-world products. I love exploring new challenges, please contact me if you have one.
-        </p>
-
-        <div className="mt-8 flex gap-4">
-          <a
-            href="#projects"
-            className="rounded-full bg-lime px-5 py-2.5 font-mono text-xs font-medium text-ink transition-transform hover:scale-105"
-          >
-            VIEW PROJECTS
-          </a>
-
-          <a
-            href="#contact"
-            className="rounded-full border border-panel2 px-5 py-2.5 font-mono text-xs text-paper transition-colors hover:border-lavender"
-          >
-            CONTACT ME
-          </a>
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section id="projects" className="mx-auto max-w-5xl px-6 pb-24">
-        <div className="mb-8 flex items-baseline justify-between">
-          <h2 className="font-display text-2xl font-medium text-paper">
-            Featured projects
-          </h2>
-
-          <span className="font-mono text-xs text-muted">
-            {PROJECTS.length} projects
-          </span>
-        </div>
-
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.symbol} {...project} />
-          ))}
-        </div>
-      </section>
-
-      {/* Contact */}
-      <footer
-        id="contact"
-        className="border-t border-panel2 bg-panel px-6 py-16"
-      >
-        <div className="mx-auto max-w-5xl">
-          <h2 className="font-display text-2xl font-medium text-paper">
-            Let&apos;s work together.
-          </h2>
-
-          <p className="mt-3 max-w-md text-sm text-muted">
-            Open to projects, collaborations, and software development
-            opportunities.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-4 font-mono text-xs">
-            <a
-              href="mailto:leiziane.trevisan@gmail.com"
-              className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
-            >
-              EMAIL
-            </a>
-
-            <a
-              href="https://github.com/LeizianeTrevisanDardin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
-            >
-              GITHUB
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/leiziane-trevisan-dardin/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-panel2 px-4 py-2 text-paper hover:border-lime hover:text-lime"
-            >
-              LINKEDIN
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Hero />
+      < FeaturedProject />
+      < ProjectSection />
+      < TestimonialSection/>
+      < AchievementsSection />
+      < AboutSection />
+      < ContactSection />
     </main>
+    </>
   );
 }
